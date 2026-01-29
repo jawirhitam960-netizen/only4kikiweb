@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Untukmu, di Hari Valentine 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e3b1E, #6f7e1e);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: #d8e2c8;
+      max-width: 420px;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      color:#2F3A1E ;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #2f2f2f;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 25px;
+      background: #f4c2b9;
+      color: black;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #b9347a;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Happy Valentine 4 kikii 💕🐱</h1>
+    <p>
+      makacih yaa Aulia rizky tyasah putri 💕 karena udah hadir dalam hidupku.  
+      makacih juga atas kesabaran, perhatian, ama semua hal kecil  
+      yang sering kali gak sempet aku ucapkan.
+    </p>
+    <p>
+      Aku juga pengen minta maap karena gak bisa memberi hadiah sungguhan. 
+      
+      gak semuanya mudah, tapi aku sungguh menghargai setiap kesempatan  
+      untuk menjadi lebih baik.Love you kiki 💕.
+    </p>
+    <p>Dear kiki,can i be your favorite boy?</p>
+
+    <button onclick="toggleMusic()">YESS!!!</button>
+  </div>
+
+  <!-- Musik menenangkan (bebas, bisa diganti) -->
+  <audio id="music" loop>
+    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_7c6c8f8c5d.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio
+  </audio>
+
+  <script>
+    const music = document.getElementById("music");
+    let isPlaying = false;
+
+    function toggleMusic() {
+      if (isPlaying) {
+        music.pause();
+      } else {
+        music.play();
+      }
+      isPlaying = !isPlaying;
+    }
+  </script>
+
+</body>
+</html>
